@@ -367,7 +367,7 @@ function convertHTML(str) {
  * odd Fibonacci numbers that are less than or equal to num
  */
 const sumFibs = num => {
-  let fibNumbers = utils.fibonacci(num);
+  const fibNumbers = utils.fibonacci(num);
   return fibNumbers.reduce((accumulator, currentItem) => {
     if (currentItem <= num && currentItem % 2 !== 0) {
       accumulator += currentItem;
